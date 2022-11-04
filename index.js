@@ -114,10 +114,14 @@ For example: invoking getInningScore(inning) might return this object:
   */
 
 
-function getInningScore() {
-  
+function getInningScore(inningCB,) {
+  return {
+    Home: inningCB(),
+    Away: inningCB()
+  }
   }
 
+  console.log(getInningScore(inning))
 
 
 
